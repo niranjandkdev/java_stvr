@@ -14,9 +14,11 @@ public class DPrimeNumber {
 		
 		while(n>1) {
 			
-			if(num%num==0 && num%n==0 ) {
+			//Any thing which divides the 
+			
+			if(num!=n && num%n==0 ) {
 				result=false;
-				
+				break;
 			} else result=true;
 			n--;
 		}
